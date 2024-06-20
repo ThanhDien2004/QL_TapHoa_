@@ -1,0 +1,33 @@
+﻿@model QuanLyBanHang_TapHoa.Models.TAIKHOAN
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Home/HomeLayout.cshtml";
+}
+
+<div>
+    <h4>TAIKHOAN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MatKhau)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatKhau)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhanQuyen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhanQuyen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TenDangNhap }) |
+    @Html.ActionLink("Quay lại", "Index")
+</p>
